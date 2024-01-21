@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+
+body,
+html {
+  background-color: #010203;
+}
+.page-body {
+  background-color: #010203;
+}
+
+.upper-section {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#form {
+  width: 40%;
+}
+.search {
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  background-color: #f0edcf09;
+  padding: 1rem;
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: #0b60b0;
+  font-family: "Lato", sans-serif;
+  color: #f0edcf;
+}
+.search::placeholder {
+  color: #0b60b0;
+}
+.search:focus {
+  border-width: 2px;
+  border-color: #0b60b0;
+  box-shadow: none;
+}
+
+.top-section {
+  background-color: #010203;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+
+.user-img {
+  border-radius: 100%;
+  border-width: 3px;
+  border: solid;
+  border-color: #0b60b0;
+  height: 200px;
+  width: 200px;
+  margin-right: 2rem;
+  background-color: #010203;
+}
+
+.profile-container {
+  display: flex;
+  color: #f0edcf;
+}
+
+.bottom-section {
+  background-color: #010203;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+}
+.title {
+  color: #0b60b0;
+}
+
+p {
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  padding-top: 0.5rem;
+}
+
+/* pagination section */
+
+.pagination-container {
+  background-color: #010203;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 1rem;
+  box-shadow: none;
+  border: solid;
+  border-width: 2px;
+  border-color: #010203;
+  background-color: #0b60b0;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+
+/* after js code  */
+
+.language-container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.language-tile {
+  background-color: #0b60b0;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+/* individual repositories card */
+.repo-card {
+  text-decoration: none;
+  color: #f0edcf;
+  background-color: #f0edcf09;
+  max-width: auto;
+  padding: 2rem;
+  border: solid;
+  border-color: #f0edcf;
+  border-width: 2px;
+  border-radius: 16px;
+}
+
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  #form {
+    width: 80%;
+  }
+  .upper-section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .bottom-section {
+    padding: 2rem;
+    background-color: #010203;
+    display: grid;
+    grid-template-columns: auto;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .page-button {
+    display: none;
+  }
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
